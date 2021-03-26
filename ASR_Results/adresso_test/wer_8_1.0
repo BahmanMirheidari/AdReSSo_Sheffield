@@ -1,0 +1,4 @@
+compute-wer --text --mode=present ark:exp/transfer_learning_adresso_itconv/train_conv_iam_tr_exp/decode_adresso_test_data/scoring_kaldi/test_filt.txt ark,p:- 
+%WER 2476.06 [ 7032 / 284, 6784 ins, 0 del, 248 sub ]
+%SER 100.00 [ 71 / 71 ]
+Scored 71 sentences, 0 not present in hyp.

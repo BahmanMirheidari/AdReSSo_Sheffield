@@ -1,7 +1,6 @@
 # AdReSSo_Sheffield
 
-<p align="center"><img width="50%" src="image.gif" /></p> 
-# AdRESSO21
+<p align="center"><img width="50%" src="image.gif" /></p>  
 AdRESSO21 challenge Interspeech 2021 - Team Sheffield
 
 Authors 

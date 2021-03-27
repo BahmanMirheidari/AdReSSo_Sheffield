@@ -61,7 +61,7 @@ train_asr_output_path = root_dir +"/ASR_Results/adresso_train"
 test_asr_output_path = root_dir +"/ASR_Results/adresso_test"
 
 # maximum text length
-MAX_TEXT_LENGTH = 100
+MAX_TEXT_LENGTH = 105
 
 # use 20% of train set for evaluation set
 validation_split = 0.2
@@ -77,7 +77,7 @@ hidden_states_size=3
 bert_model='bert-large-uncased'
 
 # model name
-model_name = 'model_5'
+model_name = 'model_4'
 
 # path to save dnn logs
 dnn_log_path = root_dir + "/dnn_log_" + model_name 

@@ -9,7 +9,7 @@ Yilin Pan, Bahman Mirheidari, and Heidi Christensen
 
 # Requirements
 ----------   
-## A) Kaldi
+## Kaldi
 Kaldi is a well-known automatic speech recognition toolkit (https://kaldi-asr.org/).
 
 ### How to install Kaldi on Linux/MacOS 
@@ -27,7 +27,7 @@ export PATH=KALDI_ROOT/utils/:$KALDI_ROOT/tools/openfst/bin:$PWD:$PATH
 export LC_ALL=C``. Add this line to the end of bash_profile ``. $KALDI_ROOT/egs/wsj/s5/path.sh``. Now run ``copy-feats --help``.
   
 
-### Change the path to the nnet3_online folder
+### ASR training
 We used Transfer learning from Librispeech on our conversational datasets as well as AMI dataset.
 The ASR_results containe the results from the ASR. 30 hypothesis calculated using different language model weights and word insertion penalty.
 

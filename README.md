@@ -36,4 +36,14 @@ The ASR_results containe the results from the ASR. 30 hypothesis calculated usin
 We have trained five models, codes and outputs are inside the folders Model1, Model2, Model3, Model4, and Model5
 
 
+Model1: The acoustic only system. The outputs of the Wav2vec2.0 hidden layers (transformer layers) are used for representing the acoustic inforamtion in the wave recordings. For classification, multiple classifiers: KNN, SVM, DT and TB are used. The wav2vec2.0 is also fine-tuned with our self-collected data. 
+
+Model2: The text only model is the BERT-based sequential classifiers with fine-tuned wav2vec2.0 transcripts as the input. 
+
+Model 3: The fusion between wav2vec2.0 extracted acoustic features and output transcripts by BERT-base model.
+
+
+
+
+
  

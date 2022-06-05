@@ -11,6 +11,8 @@ Yilin Pan, Bahman Mirheidari, and Heidi Christensen
 ----------   
 ## Kaldi
 Kaldi is a well-known automatic speech recognition toolkit (https://kaldi-asr.org/).
+## wav2vec2.0
+wav2vec2.0 is a self-supervised end-to-end ASR system (https://github.com/huggingface/transformers)
 
 ### How to install Kaldi on Linux/MacOS 
 1. Get Kaldi from the GitHub: ``git clone https://github.com/kaldi-asr/kaldi.git kaldi-trunk --origin golden``.
@@ -25,12 +27,16 @@ export PATH=KALDI_ROOT/utils/:$KALDI_ROOT/tools/openfst/bin:$PWD:$PATH
 [ ! -f $KALDI_ROOT/tools/config/common_path.sh ] && echo >&2 "The standard file $KALDI_ROOT/tools/config/common_path.sh is not present -> Exit!" && exit 1
 . $KALDI_ROOT/tools/config/common_path.sh
 export LC_ALL=C``. Add this line to the end of bash_profile ``. $KALDI_ROOT/egs/wsj/s5/path.sh``. Now run ``copy-feats --help``.
+    
   
-
+  
 ### ASR training
+#### Kaldi script based pipeline ASR system
 We used Transfer learning from Librispeech on our conversational datasets as well as AMI dataset.
 The ASR_results containe the results from the ASR. 30 hypothesis calculated using different language model weights and word insertion penalty.
 
+
+#### wav2vec2.0 based end-to-end ASR system 
 
 ### Models
 We have trained five models, codes and outputs are inside the folders Model1, Model2, Model3, Model4, and Model5
@@ -40,7 +46,13 @@ Model1: The acoustic only system. The outputs of the Wav2vec2.0 hidden layers (t
 
 Model2: The text only model is the BERT-based sequential classifiers with fine-tuned wav2vec2.0 transcripts as the input. 
 
-Model 3: The fusion between wav2vec2.0 extracted acoustic features and output transcripts by BERT-base model.
+Model3: The fusion between wav2vec2.0 extracted acoustic features and output transcripts by BERT-base model.
+
+Model4: 
+
+Model5:
+
+
 
 
 

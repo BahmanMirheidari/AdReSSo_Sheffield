@@ -37,7 +37,10 @@ The ASR_results containe the results from the ASR. 30 hypothesis calculated usin
 
 
 #### wav2vec2.0 based end-to-end ASR system 
-
+Wav2vec2.0 as an end-to-end ASR paradigm was used for both the audio transcription and the acoustic feature extraction. 
+For extracting the acoustic features from the wav2vec2.0 structure, the transformer layers' outputs were extracted as the acoustic representations of the input waveform segments. 
+The pre-trained model (https://huggingface.co/facebook/wav2vec2-large-960h-lv60-self) is adapted on the IVA dataset.
+ 
 ### Models
 We have trained five models, codes and outputs are inside the folders Model1, Model2, Model3, Model4, and Model5
 
@@ -48,9 +51,9 @@ Model2: The text only model is the BERT-based sequential classifiers with fine-t
 
 Model3: The fusion between wav2vec2.0 extracted acoustic features and output transcripts by BERT-base model.
 
-Model4: 
+Model4: The BERT-based model that using both the hypotheses with the confidence scores output by the kaldi pipeline ASR system (the maximum word length of the input sequence equals to 105).
 
-Model5:
+Model5: The BERT-based model that using both the hypotheses with the confidence scores output by the kaldi pipeline ASR system (the maximum word length of the input sequence equals to 100).
 
 
 

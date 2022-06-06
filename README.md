@@ -62,6 +62,8 @@ Please use the following, to cite our research:
 @inproceedings{pan2021,
   title={Using the Outputs of Different Automatic Speech Recognition Paradigms for Acoustic-and BERT-Based Alzheimer’s Dementia Detection Through Spontaneous Speech},
   author={Pan, Yilin and Mirheidari, Bahman and Harris, Jennifer M and Thompson, Jennifer C and Jones, Matthew and Snowden, Julie S and Blackburn, Daniel and Christensen, Heidi},
+  journal={Proc. Interspeech 2021},
+  pages={3810--3814}, 
   year={2021}
 }
 ```

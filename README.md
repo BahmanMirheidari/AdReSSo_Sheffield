@@ -55,9 +55,16 @@ Model4: The BERT-based model that using both the hypotheses with the confidence 
 
 Model5: The BERT-based model that using both the hypotheses with the confidence scores output by the kaldi pipeline ASR system (the maximum word length of the input sequence equals to 100).
 
+### Citing our work
 
-
-
+Please use the following, to cite our research:
+```
+@inproceedings{pan2021,
+  title={Using the Outputs of Different Automatic Speech Recognition Paradigms for Acoustic-and BERT-Based Alzheimer’s Dementia Detection Through Spontaneous Speech},
+  author={Pan, Yilin and Mirheidari, Bahman and Harris, Jennifer M and Thompson, Jennifer C and Jones, Matthew and Snowden, Julie S and Blackburn, Daniel and Christensen, Heidi},
+  year={2021}
+}
+```
 
 
 
